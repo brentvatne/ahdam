@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		58F412859F2B858B4A275E21 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BAD075CAAB6536D306146 /* ExpoModulesProvider.swift */; };
+		5B9EF3A364C9C1BD071B1F4C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7D2AAFEE9AF525D3A8EC7 /* ExpoModulesProvider.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		95386ACD84FD32F961FE9CE3 /* libPods-ahdam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AEDFDFBCA01A7A262A0676 /* libPods-ahdam.a */; };
 /* End PBXBuildFile section */
@@ -42,8 +44,10 @@
 		B7C0AFF16D8920A63BC06033 /* Pods-ahdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ahdam.release.xcconfig"; path = "Target Support Files/Pods-ahdam/Pods-ahdam.release.xcconfig"; sourceTree = "<group>"; };
 		D297D67E5583C23749993E7A /* Pods-ahdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ahdam.debug.xcconfig"; path = "Target Support Files/Pods-ahdam/Pods-ahdam.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AEDFDFBCA01A7A262A0676 /* libPods-ahdam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ahdam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3BAD075CAAB6536D306146 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ahdam/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F9AEABEB64971FF18E8EB3CE /* Pods-ahdam-ahdamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ahdam-ahdamTests.release.xcconfig"; path = "Target Support Files/Pods-ahdam-ahdamTests/Pods-ahdam-ahdamTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEC7D2AAFEE9AF525D3A8EC7 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ahdam-ahdamTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,14 @@
 			name = ahdam;
 			sourceTree = "<group>";
 		};
+		15F73EFAAB2DECCE727BB6A0 /* ahdam */ = {
+			isa = PBXGroup;
+			children = (
+				DA3BAD075CAAB6536D306146 /* ExpoModulesProvider.swift */,
+			);
+			name = ahdam;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,23 @@
 				8F2A45C3F990D14165E83CC5 /* libPods-ahdam-ahdamTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39527624D0A33C1FB34C36F2 /* ahdamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7D2AAFEE9AF525D3A8EC7 /* ExpoModulesProvider.swift */,
+			);
+			name = ahdamTests;
+			sourceTree = "<group>";
+		};
+		6EA960569BB19EEAF26227D2 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				15F73EFAAB2DECCE727BB6A0 /* ahdam */,
+				39527624D0A33C1FB34C36F2 /* ahdamTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		7B7076984F2832B61AE006C3 /* Pods */ = {
@@ -134,6 +163,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				7B7076984F2832B61AE006C3 /* Pods */,
+				6EA960569BB19EEAF26227D2 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -404,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ahdamTests.m in Sources */,
+				5B9EF3A364C9C1BD071B1F4C /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +444,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				58F412859F2B858B4A275E21 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +469,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ahdamTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,6 +480,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ahdam.app/ahdam";
@@ -461,7 +494,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ahdamTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +505,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ahdam.app/ahdam";
@@ -496,6 +530,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ahdam;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -521,6 +556,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ahdam;
 				SWIFT_VERSION = 5.0;
@@ -577,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -635,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
